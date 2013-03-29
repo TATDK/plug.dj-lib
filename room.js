@@ -63,6 +63,7 @@ WindowMessageListener = Class.extend({
     ytx: function(a) {}
 }),
 socket, Socket = Class.extend({
+    backoff: 0,
     init: function(a) {},
     send: function(a) {},
     open: function() {},
