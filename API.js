@@ -1,0 +1,86 @@
+var API = {
+    CHAT: 'chat',
+    USER_SKIP: 'userSkip',
+    USER_JOIN: 'userJoin',
+    USER_LEAVE: 'userLeave',
+    USER_FAN: 'userFan',
+    FRIEND_JOIN: 'friendJoin',
+    FAN_JOIN: 'fanJoin',
+    VOTE_UPDATE: 'voteUpdate',
+    CURATE_UPDATE: 'curateUpdate',
+    ROOM_SCORE_UPDATE: 'roomScoreUpdate',
+    DJ_ADVANCE: 'djAdvance',
+    DJ_UPDATE: 'djUpdate',
+    VOTE_SKIP: 'voteSkip',
+    MOD_SKIP: 'modSkip',
+    WAIT_LIST_UPDATE: 'waitListUpdate',
+    CHAT_COMMAND: 'chatCommand',
+    HISTORY_UPDATE: 'historyUpdate',
+    ROLE: {
+        ADMIN: 10
+        AMBASSADOR: 8
+        BOUNCER: 2
+        COHOST: 4
+        HOST: 5
+        MANAGER: 3
+        NONE: 0
+        RESIDENTDJ: 1
+    },
+    STATUS: {
+        AVAILABLE: 0,
+        AFK: 1,
+        WORKING: 2,
+        GAMING: 3
+    },
+    BAN: {
+        HOUR: 60,
+        DAY: 1440,
+        PERMA: -1
+    },
+    enabled: false,
+    on: function() {},
+    once: function() {},
+    off: function() {},
+    trigger: function() {},
+    stopListening: function() {},
+    listenTo: function() {},
+    listenToOnce: function() {},
+    bind: function() {},
+    unbind: function() {},
+    getUsers: function() {},
+    getUser: function() {},
+    getAudience: function() {},
+    getDJ: function() {},
+    getStaff: function() {},
+    getAdmins: function() {},
+    getAmbassadors: function() {},
+    getHost: function() {},
+    getMedia: function() {},
+    getTimeElapsed: function() {},
+    getTimeRemaining: function() {},
+    getWaitList: function() {},
+    getRoomScore: function() {},
+    getHistory: function() {},
+    hasPermission: function() {},
+    setVolume: function() {},
+    getVolume: function() {},
+    getWaitListPosition: function() {},
+    setStatus: function() {},
+    sendChat: function() {},
+    chatLog: function() {},
+    djJoin: function() {},
+    djLeave: function() {},
+    getNextMedia: function() {},
+    getBannedUsers: function() {},
+    moderateForceSkip: function() {},
+    moderateAddDJ: function() {},
+    moderateRemoveDJ: function() {},
+    moderateBanUser: function() {},
+    moderateUnbanUser: function() {},
+    moderateDeleteChat: function() {},
+    moderateSetRole: function() {},
+    moderateLockWaitList: function() {},
+    moderateMoveDJ: function() {},
+    dispatch: function() {},
+    _events: {}
+};
